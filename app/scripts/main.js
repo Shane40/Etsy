@@ -13,7 +13,7 @@ console.log(etsy_items.results);
 console.log(etsy_items.results[0]);
 
 function getproduct() {
-var productboxHTML;
+var productboxHTML = "";
 etsy_items.results.forEach ( function (listing){
 	console.log(listing.price);
 	console.log(listing.title);
@@ -22,7 +22,7 @@ etsy_items.results.forEach ( function (listing){
 
 productboxHTML +=
 '<div class="productbox">' +
-	'<img src= '+listing.Images[0].url_fullxfull+'/> ' +
+	'<img src= "'+listing.Images[0].url_fullxfull+'"/> ' +
 	'<h3>'+ listing.title+' </h3>' +
 	'<span> <h4>'+ listing.Shop.shop_name+' </h4> </span>' +
 	'<span> <h5>'+ listing.price+' '+ listing.currency_code+'</h5> </span>' +
@@ -34,6 +34,7 @@ console.log (productboxHTML);
 });
 return productboxHTML;
 };
+
 $(document).ready(function(){
 	$(".rightbox").append(getproduct());
 

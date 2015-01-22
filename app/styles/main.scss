@@ -4,12 +4,14 @@
 
 // Custom Styles
 body {
-  margin-left: 80px;
-  margin-left: 80px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+      margin-left: 80px;
+          width: 1200px;
+
+
 }
 .container {
-  height: 80px;
+    height: 80px;
 }
 .container h1 {
     float: left;
@@ -26,80 +28,99 @@ body {
     padding-top: 8px;
     padding-bottom: 8px;
     float: left;
-    font-size: 12px;
-    width: 200px;
+    font-size: 13px;
+    width: 300px;
     border: 1px solid;
-}
-
-.container span {
-    list-style: none;
-    float: left;
-    border-color: none;
-    background-color: aqua;
     border-radius: 4px;
-    margin-top: 20px;
+    background-color: hsla(24, 6%, 92%, 1);
+    box-shadow: 1px 1px 3px;
+}
+ul li:nth-child(1) {
+    float: left;
+    list-style-type: none;
+    background-color: aqua;
     font-size: 12px;
     width: 15px;
     height: 15px;
-    margin-top: 30px;
-    padding-left: 150px;
+    padding-left: 90px;
+}
+ul li:nth-child(2) {
+    list-style-type: none;
+    float: left;
+    font-size: 12px;
+    width: 15px;
+    height: 15px;
+    padding-left: 250px;
     overflow: hidden;
 }
+
 // BEGINNING OF BOX LEFT
 .boxleft {
-  clear: both;
   float: left;
+  margin-left: 0px;
   width: 180px;
-  height: 1000px;
-  padding-right: 15px;
+  height: 10000px;
+  padding-right: 25px;
+  padding-left: 10px;
   background-color: white;
-  }
+}
+.itemtype {
+  line-height: 200%;
+}
 .boxleft li {
   list-style: none;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  margin-left: 0px;
+  font-size: 13px;
   line-height: 150%;
   padding-left: 10px;
-  color: hsla(201, 28%, 40%, 0.71);
+  color: hsla(192, 99%, 36%, 1);
 }
 .boxleft p {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
 }
 // END OF BOXLEFT
 
 .productbox {
+  margin-top: 12px;
+  margin-right: 12px;
   width: 250px;
   float: left;
-  height: 250px;
+  height: 280px;
   overflow: hidden;
 }
 
 // BEGINNING OF BOXRIGHT
+
 .productbox h3 {
+  margin: auto;
   float: clear;
   list-style: none;
   font-size: 13px;
   font-style: bold;
-  list-style: none;
-  margin-bottom: -10px;
+  margin-bottom: -15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 img {
-  width: 90px;
+  width: 230px;
+  height: 200px;
 }
 
 .productbox h4 {
   font-size: 12px;
-  color: grey;
+  font-weight: normal;
+  color: hsla(22, 6%, 81%, 1);
   float: left;
-
 }
 .productbox h5 {
-  font-size: 10px;
-  list-style: none;
+  font-size: 12px;
+  font-weight: normal;
   color: green;
   float: right;
+  padding-right: 12px;
 }
 //  END OF HEADER
 
