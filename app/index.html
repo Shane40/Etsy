@@ -10,9 +10,9 @@
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-  <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+  <!-- build:css styles/vendor.css -->
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -23,23 +23,26 @@
 </head>
 <body>
 
-  <div class="container">
+
+<div class="container">
    <h1>Etsy</h1>
-   <p> whiskey </p>
-   <p>Search</p>
-   <p>Browse</p>
+   <p>whiskey</p>
+   <span> Search </span>
+   <span> Browse </span>
  </div> <!-- //container -->
 
- <div class="boxleft">
-   <div class="itemtype">
+
+<header> <!-- BEGIN BACKGROUND -->
+<div class="boxleft">
+    <div class="itemtype">
       <p>Show results for</p>
       <li>Item Type</li>
       <li>All Items<li>
       <li>Vintage</li>
       <li>Craft Supplies</li>
     </div> <!-- //itemtype -->
-    
-    <div class="Categories">
+      <hr />
+
       <p>Categories</p>
       <p>Handmade</p>
       <li>Glass</li>
@@ -50,9 +53,6 @@
       <li>Art</li>
       <li>Ceramics and Pottery</li>
       <li>Clothing</li>
-    </div>
-
-    <div class="Vintage">
       <p>Vintage</p>
       <li>Glass</li>
       <li>Weddings<li>
@@ -62,26 +62,25 @@
       <li>Art</li>
       <li>Ceramics and Pottery</li>
       <li>Clothing</li>
-    </div>
-
-    <div class="craftsupplies">
+  
       <p>Craft Supplies</p>
       <li>Bead</li>
       <li>Commercial<li>
       <li>Scrapbooking</li>
       <li>Fabric</li>
-    </div>
-</div> <!-- boxleft -->
+      <hr />
+</div> <!-- END OF boxleft -->
 
 
 <div class="rightbox">
-    
 
+      </div>
 
+</div> <!-- END OF RIGHTBOX -->
 
-
-</div>
-
+</header> 
+<!-- END BACKGROUND
+ -->
 
 
       <!-- build:js scripts/vendor.js -->
@@ -95,6 +94,8 @@
       <script src="scripts/main.js"></script>
       <script src="scripts/jquery-2.1.3.min.js"></script>
       <!-- endbuild -->
-      
-    </body>
+
+
+<!-- END BACKGROUND
+ -->    </body>
     </html>

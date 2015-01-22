@@ -9,7 +9,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .container {
-  height: 90px;
+  height: 80px;
 }
 .container h1 {
     float: left;
@@ -20,40 +20,86 @@ body {
     font-family: 'Droid Serif', serif;
 }
 .container p {
-    padding-left: 80px;
-     float: left;
-    font-size: 12px;
-    width: 250px;
-    border: 1px solid;
-    background-width: 1px;
-    background-color: hsla(5, 0%, 91%, 1);
-}
-.container p:first-child {
+    margin-top: 25px;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     float: left;
-    font-size: 10px;
-    width: 250px;
+    font-size: 12px;
+    width: 200px;
     border: 1px solid;
-    background-width: 1px;
-    background-color: hsla(5, 0%, 91%, 1);
 }
 
+.container span {
+    list-style: none;
+    float: left;
+    border-color: none;
+    background-color: aqua;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-size: 12px;
+    width: 15px;
+    height: 15px;
+    margin-top: 30px;
+    padding-left: 150px;
+    overflow: hidden;
+}
+// BEGINNING OF BOX LEFT
 .boxleft {
   clear: both;
   float: left;
-  width: 150px;
+  width: 180px;
+  height: 1000px;
+  padding-right: 15px;
   background-color: white;
-}
+  }
 .boxleft li {
   list-style: none;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
-  color: blue;
+  line-height: 150%;
+  padding-left: 10px;
+  color: hsla(201, 28%, 40%, 0.71);
 }
-
-.boxleft .itemtype p {
-  font-size: 15px;
+.boxleft p {
+  font-size: 12px;
   font-weight: bold;
 }
+// END OF BOXLEFT
 
+.productbox {
+  width: 250px;
+  float: left;
+  height: 250px;
+  overflow: hidden;
+}
 
+// BEGINNING OF BOXRIGHT
+.productbox h3 {
+  float: clear;
+  list-style: none;
+  font-size: 13px;
+  font-style: bold;
+  list-style: none;
+  margin-bottom: -10px;
+}
+
+img {
+  width: 90px;
+}
+
+.productbox h4 {
+  font-size: 12px;
+  color: grey;
+  float: left;
+
+}
+.productbox h5 {
+  font-size: 10px;
+  list-style: none;
+  color: green;
+  float: right;
+}
+//  END OF HEADER
 

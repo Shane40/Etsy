@@ -17,16 +17,15 @@ var productboxHTML;
 etsy_items.results.forEach ( function (listing){
 	console.log(listing.price);
 	console.log(listing.title);
-	console.log(listing.Images[0].url_170x135);
+	console.log(listing.Images[0].url_fullxfull);
 	console.log(listing.Shop.shop_name);
 
 productboxHTML +=
 '<div class="productbox">' +
-	'<img src= '+listing.Images[0].url_170x135+'/> ' +
-	'<li>'+ listing.title+' </li>' +
-	'<span> <p>'+ listing.Shop.shop_name+' </p> </span>' +
-	'<span> <p>'+ listing.price+' </p> </span>' +
-
+	'<img src= '+listing.Images[0].url_fullxfull+'/> ' +
+	'<h3>'+ listing.title+' </h3>' +
+	'<span> <h4>'+ listing.Shop.shop_name+' </h4> </span>' +
+	'<span> <h5>'+ listing.price+' '+ listing.currency_code+'</h5> </span>' +
 '</div>'
 
 console.log (productboxHTML);
@@ -40,29 +39,35 @@ $(document).ready(function(){
 
 });
 
-
+// WHAT HE DID IN CLASS
+// (".rightbox").addClass("productbox");
+// itemContent = '<div class="item">';
+// itemContent += '<h4>' + itemName + '</h4>'
 
 
 // etsy_items.path.forEach( function (item){
 // 	console.log(item.category_path);
 // });
+// text-overflow: ellipsis;
+// white-space: no wrap;
+
+// set max-height on images
+
+// etsy_items.results.forEach( function (item){
+// 	console.log(item.price);
+// });
+
+// etsy_items.results.forEach( function (item){
+// 	console.log(item.Images[0].url_fullxfull);
+
+// });
 
 
-etsy_items.results.forEach( function (item){
-	console.log(item.price);
-});
 
-etsy_items.results.forEach( function (item){
-	console.log(item.Images[0].url_fullxfull);
+// etsy_items.results.forEach( function (item){
+// 	console.log(item.Images[0].url_fullxfull);
 
-});
-
-
-
-etsy_items.results.forEach( function (item){
-	console.log(item.Images[0].url_fullxfull);
-
-});
+// });
 
 // etsy_items.results.forEach( function (item){
 // $('.hero-unit').append('<img src=" + item.Images[0].url.fullxfull + '">");
