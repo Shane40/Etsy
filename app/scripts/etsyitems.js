@@ -1,4 +1,4 @@
-{  
+var etsy_items ={  
    "count":19973,
    "results":[  
       {  
