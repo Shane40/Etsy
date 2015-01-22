@@ -10,9 +10,35 @@ console.log(etsy_items.results);
 	//returns all the objects within the array called "results"
 
 
-console.log(etsy_items.results.materials[0]);
+console.log(etsy_items.results[0]);
 
+function getproduct() {
+var productboxHTML;
+etsy_items.results.forEach ( function (listing){
+	console.log(listing.price);
+	console.log(listing.title);
+	console.log(listing.Images[0].url_170x135);
+	console.log(listing.Shop.shop_name);
 
+productboxHTML +=
+'<div class="productbox">' +
+	'<img src= '+listing.Images[0].url_170x135+'/> ' +
+	'<li>'+ listing.title+' </li>' +
+	'<span> <p>'+ listing.Shop.shop_name+' </p> </span>' +
+	'<span> <p>'+ listing.price+' </p> </span>' +
+
+'</div>'
+
+console.log (productboxHTML);
+
+//give the function a name that represents a concept.
+});
+return productboxHTML;
+};
+$(document).ready(function(){
+	$(".rightbox").append(getproduct());
+
+});
 
 
 
