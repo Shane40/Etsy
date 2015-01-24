@@ -114,7 +114,7 @@ body {
     background-color: hsla(22, 3%, 92%, 1);
     width: 1350px;
     height: 2500px;
-    padding-left: 200px;
+    padding-left: 205px;
     padding-top: 25px;
     overflow: hidden;
     position: absolute;
@@ -125,24 +125,32 @@ body {
   float: left;
   width: 100px;
   list-style-type: none;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: bold;
 }
 .whiskey li {
-  font-size: 12px;
+  font-size: 11px;
   float: left;
   width: 400px;
   padding-left: 125px;
   list-style-type: none;
   font-weight: bold;
 }
+.whiskey .light {
+font-weight: normal;
+}
 .sort {
-  font-size: 12px;
+  font-size: 11px;
   float: left;
   width: 500px;
   padding-left: 300px;
   list-style-type: none;
-  font-weight: bold;
+  font-weight: normal;
+}
+
+.sort .blue {
+  color: hsla(192, 99%, 36%, 1);
+
 }
 
 // ======Box Left=======
@@ -322,10 +330,18 @@ body {
     border-top: 1px solid;
     padding-top: 15px;
     margin-bottom: 8px;
-
 }
 
+// ======Ordering Options=====
+.onbutton button { 
+}
 
+.orderingoptions .accepts {
+   font-size: 9pt;
+   color: hsla(192, 99%, 36%, 1);
+}
+
+  
 
 
 
