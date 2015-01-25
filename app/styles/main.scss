@@ -4,8 +4,8 @@
 
 // Custom Styles
 body {
-  font-family: Arial;
-  margin-left: 200px;
+    font-family: Arial;
+    margin-left: 200px;
     width: 1150px;
 }
 .container {
@@ -123,7 +123,7 @@ body {
 .borderbox {
     background-color: hsla(22, 3%, 92%, 1);
     width: 1350px;
-    height: 2500px;
+    height: 2800px;
     padding-left: 205px;
     padding-top: 25px;
     overflow: hidden;
@@ -550,10 +550,10 @@ img {
   font-size: 11px;
   position: relative;
   float: left;
-  width: 700px;
-  margin-left: 225px;
+  width: 120px;
   margin-top: 25px;
-  text-align: center;
+  margin-left: 520px;
+  margin-right: 520px;
 }
 .numbers .one {
   color: black;
@@ -569,14 +569,257 @@ img {
 }
 
 
+.circles .circleone {
+    position: relative;
+    float: left;
+    overflow: none;
+    margin-left: 550px;
+    margin-right: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 22px;
+    height: 20px;
+    border-radius: 50%;
+    opacity: 0.5;
+    background-color: hsla(192, 99%, 36%, 1);
+}
+.circles .circletwo {
+    position: relative;
+    overflow: none;
+    margin-bottom: 20px;
+    float: left;
+    width: 22px;
+    height: 20px;
+    margin-top: 10px;
+    border-radius: 50%;
+    background-color: hsla(192, 99%, 36%, 1);
+}
+// .circles .arrowcircleone {
+//     position: relative;
+//     background-color: white;
+//     float: left;
+//     padding-left: -20p
+//     padding-top: 3px;
+// }
+// .circles .arrowcircletwo {
+//     position: relative;
+//     background-color: black;
+//     float: left;
+//     height: 20px
+//     overflow: none;
+//     margin-top: -10px;
+//     margin-bottom: 0;
+//     margin-right: 0;
+//     padding-left: 4px;
+//     padding-top: 3px;
+// }
 
+// =======footertwo======
 
+.footertoo {
+  overflow: none;
+  position: relative;
+  list-style: none;
+}
 
+.footertoo .turn {
+  float: left;
+  width: 120px;
+  margin-left: -610px;
+  margin-right: 12px;
+  margin-top: 50px;
+  font-size: 11px;
+}
 
+.footertoo .shop {
+  float: left;
+  width: 120px;
+  margin-left: -610px;
+  margin-right: 12px;
+  font-size: 11px;
+   margin-top: 80px;
+}
 
+.footertoo .sell {
+  margin-top: 60px;
+  margin-left: -610px;
+  margin-right: 12px;
+   margin-top: 100px;
+  float: left;
+  width: 120px;
+  font-size: 11px;
+}
+.footertoo .handbook {
+  margin-top: 60px;
+  margin-left: -610px;
+  margin-right: 12px;
+  float: left;
+  width: 120px;
+  margin-top: 120px;
+  font-size: 11px;
+  color: hsla(192, 99%, 36%, 1);
 
+}
+.footertoo .credit {
+  margin-top: 60px;
+  float: left;
+  width: 120px;
+  font-size: 11px;
+   margin-top: 140px;
+   margin-left: -610px;
+   margin-right: 12px;
+   color: hsla(192, 99%, 36%, 1);
 
+}
 
+.footertoo .join {
+  margin-top: 50px;
+  float: left;
+  width: 120px;
+  margin-left: -450px;
+  font-size: 11px;
+}
 
+.footertoo .teams {
+  margin-top: 70px;
+   margin-left: -450px;
+  float: left;
+  width: 120px;
+  font-size: 11px;
+   color: hsla(192, 99%, 36%, 1);
 
+}
 
+.footertoo .forums {
+  margin-top: 90px;
+   margin-left: -450px;
+  float: left;
+  width: 120px;
+  font-size: 11px;
+   color: hsla(192, 99%, 36%, 1);
+
+}
+.footertoo .upcoming {
+  margin-top: 110px;
+   margin-left: -450px;
+  float: left;
+  width: 120px;
+  font-size: 11px;
+     color: hsla(192, 99%, 36%, 1);
+}
+
+.footertoo .affiliate {
+  margin-top: 130px;
+  margin-left: -450px;
+  float: left;
+  width: 120px;
+  font-size: 11px;
+  color: hsla(192, 99%, 36%, 1);
+}
+
+.footertoo .discover {
+  margin-top: 50px;
+  margin-left: -280px;
+  float: left;
+  width: 120px;
+  font-size: 11px;
+  color: black;
+}
+
+.footertoo .cards {
+  margin-top: 70px;
+  margin-left: -280px;
+  float: left;
+  width: 120px;
+  font-size: 11px;
+  color: hsla(192, 99%, 36%, 1);
+}
+.footertoo .blog {
+  margin-top: 90px;
+  margin-left: -280px;
+  float: left;
+  width: 120px;
+  font-size: 11px;
+  color: hsla(192, 99%, 36%, 1);
+}
+
+.footertoo .taste {
+  margin-top: 110px;
+  margin-left: -280px;
+  float: left;
+  width: 120px;
+  font-size: 11px;
+  color: hsla(192, 99%, 36%, 1);
+}
+
+.footertoo .apps {
+  margin-top: 130px;
+  margin-left: -280px;
+  float: left;
+  width: 120px;
+  font-size: 11px;
+  color: hsla(192, 99%, 36%, 1);
+}
+
+.footertoo .gift {
+  margin-top: 150px;
+  margin-left: -280px;
+  float: left;
+  width: 120px;
+  font-size: 11px;
+  color: hsla(192, 99%, 36%, 1);
+}
+
+.footertoo .wholesale {
+  margin-top: 170px;
+  margin-left: -280px;
+  float: left;
+  width: 120px;
+  font-size: 11px;
+  color: hsla(192, 99%, 36%, 1);
+}
+
+.footertoo .get {
+  margin-top: 50px;
+  margin-left: -120px;
+  float: left;
+  width: 120px;
+  font-size: 11px;
+  color: black;
+}
+
+.footertoo .about {
+  margin-top: 70px;
+  margin-left: -120px;
+  float: left;
+  width: 120px;
+  font-size: 11px;
+  color: hsla(192, 99%, 36%, 1);
+}
+
+.footertoo .careers {
+  margin-top: 90px;
+  margin-left: -120px;
+  float: left;
+  width: 120px;
+  font-size: 11px;
+  color: hsla(192, 99%, 36%, 1);
+}
+
+.footertoo .press {
+  margin-top: 110px;
+  margin-left: -120px;
+  float: left;
+  width: 120px;
+  font-size: 11px;
+  color: hsla(192, 99%, 36%, 1);
+}
+
+.footertoo .developers {
+  margin-top: 130px;
+  margin-left: -120px;
+  float: left;
+  width: 120px;
+  font-size: 11px;
+  color: hsla(192, 99%, 36%, 1);
+}
