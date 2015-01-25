@@ -1,16 +1,18 @@
 // .etsyitems.results[0].price;
 // console.log();
-console.log ('It works!');
+// console.log ('It works!');
 
-	// $(‘.container button’).children().on(‘click’, function () {
-	// alert($(this).text());
-	// }); // targets buttons as well
+// 	// $(‘.container button’).children().on(‘click’, function () {
+// 	// alert($(this).text());
+// 	// }); // targets buttons as well
 
-console.log(etsy_items.results);
-	//returns all the objects within the array called "results"
+// console.log(etsy_items.results);
+// 	//returns all the objects within the array called "results"
 
 
-console.log(etsy_items.results[0]);
+// console.log(etsy_items.results[0]);
+
+
 
 function getproduct() {
 var productboxHTML = "";
@@ -23,7 +25,8 @@ etsy_items.results.forEach ( function (listing){
 productboxHTML +=
 '<div class="productbox">' +
 	'<img src= "'+listing.Images[0].url_fullxfull+'"/> ' +
-	'<h3>'+ listing.title+' </h3>' +
+	'<h3 <a href='+listing.title+' '+https:\/\/img0.etsystatic.com\/049\/1\/5905696\/il_fullxfull.682475080_npg4.jpg+' </a>
+	</h3>' +	
 	'<span> <h4>'+ listing.Shop.shop_name+' </h4> </span>' +
 	'<span> <h5>'+ listing.price+' '+ listing.currency_code+'</h5> </span>' +
 '</div>'
@@ -32,6 +35,8 @@ console.log (productboxHTML);
 
 //give the function a name that represents a concept.
 });
+
+
 return productboxHTML;
 };
 
@@ -39,6 +44,7 @@ $(document).ready(function(){
 	$(".rightbox").append(getproduct());
 
 });
+
 
 // WHAT HE DID IN CLASS
 // (".rightbox").addClass("productbox");
@@ -89,3 +95,52 @@ $(document).ready(function(){
 // 	$('.content3').addClass('open3');
 	
 // });
+
+
+
+
+// .etsyitems.results[0].price;
+// console.log();
+// console.log ('It works!');
+
+// 	// $(‘.container button’).children().on(‘click’, function () {
+// 	// alert($(this).text());
+// 	// }); // targets buttons as well
+
+// console.log(etsy_items.results);
+// 	//returns all the objects within the array called "results"
+
+
+// console.log(etsy_items.results[0]);
+
+// function getproduct() {
+// var productboxHTML = "";
+// etsy_items.results.forEach ( function (listing){
+// 	console.log(listing.price);
+// 	console.log(listing.title);
+// 	console.log(listing.Images[0].url_fullxfull);
+// 	console.log(listing.Shop.shop_name);
+
+// productboxHTML +=
+// '<div class="productbox">' +
+// 	'<img src= "'+listing.Images[0].url_fullxfull+'"/> ' +
+// 	'<h3>'+ listing.title+' </h3>' +
+// 	'<span> <h4>'+ listing.Shop.shop_name+' </h4> </span>' +
+// 	'<span> <h5>'+ listing.price+' '+ listing.currency_code+'</h5> </span>' +
+// '</div>'
+
+// console.log (productboxHTML);
+
+// //give the function a name that represents a concept.
+// });
+
+
+// return productboxHTML;
+// };
+
+// $(document).ready(function(){
+// 	$(".rightbox").append(getproduct());
+
+// });
+
+
