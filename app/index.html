@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
   <title>Etsy</title>
 
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
   <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
@@ -42,8 +44,8 @@
    <li> Register </li>
    </span>
    <span class="signin">
-   <li> Sign In </li>
-   </span>
+   <li> Sign In </li> </span>
+   <i class="fa fa-cart-arrow-down"></i>
  </div> <!-- //container -->
 
 
@@ -63,15 +65,15 @@
 
 <div class="boxleft">
     <div class="itemtype">
-      <li>Item Type</li>
-      <li>All Items<li>
-      <li>Handmade</li>
-      <li>Vintage</li>
-      <li>Craft Supplies</li>
+      <li> Item Type</li>
+      <li> <input type="radio" onclick=""> </input> All Items<li>
+      <li> <input type="radio" onclick=""> </input> Handmade</li>
+      <li> <input type="radio" onclick=""> </input> Vintage</li>
+      <li> <input type="radio" onclick=""> </input> Craft Supplies</li>
     </div> <!-- //itemtype -->
       <hr />
 
-      <li>Categories</li>
+      <a>Categories</a>
       <p>Handmade</p>
       <li>Glass</li>
       <li>Weddings<li>
@@ -134,33 +136,105 @@
 <!-- =======Ordering Options======== -->
     <div class="orderingoptions">
       <p> Ordering options </p>
-      <button class="white" type="button" onclick=""> </button> 
+      <input type="radio" onclick=""> </input> 
       <span class="accepts">Accepts Etsy Gift Cards</span>
-      <button class="white" type="button" onclick=""> </button> 
+      <input type="radio" onclick=""> </input> 
       <span class="accepts">Customizable</span>
     </div>
 
 <!-- =======Shop Location======== --> 
 
+    <div class="shoplocation">
+      <p> Shop location </p>
+      <input type="radio" onclick=""> </input> 
+      <span class="anywhere">Anywhere</span>
+      <input type="radio" onclick=""> </input> 
+      <span class="US">United States</span>
+      <span class="accepts">Choose a custom location</span>
+    </div>
 
-</div> <!-- END OF boxleft -->
+<!-- ======= Ships To ======== -->
+
+  <div class="shipsto">
+      <span class="ships">
+      <p> Ships To </p> </span>
+      <span class="clear">
+      <p> Clear </p> </span>
+      <span class="united">
+          <li> United States </li>
+        </span>
+    </div>
+
+</div> 
+<!-- END OF boxleft -->
 
 
 
-
-
-
-
+<!-- =====Right Box==== -->
 
 <div class="rightbox">
 
 </div> <!-- END OF RIGHTBOX -->
 
-<!-- END BACKGROUND
- -->
+<!-- END BACKGROUND -->
 
 
-      <!-- build:js scripts/vendor.js -->
+<!-- =====footer===== -->
+
+
+<div class="footer">
+  <span class="related">Related to </span>
+  <span class="liquor"> whiskey </span>
+  <span class="firstul">
+      <li> whiskey decanter </li>
+      <li>whiskey barrel </li>
+      <li>whiskey glass </li>
+  </span>
+
+  <span class="secondul">
+      <li>jack daniels </li>
+      <li>bourbon </li>
+      <li>whiskey shirt </li>
+  </span>
+
+  <span class="thirdul">
+      <li>scotch </li>
+      <li> beer </li>
+      <li> whiskey stone </li>
+  </span>
+  <span class="lightbold">
+      <li> Looking for shops? <span class="whiskeybold"> whiskeynweddingbells, whiskeydarling, WhiskeyDogWares, See more. 
+      </span>
+      </li> 
+  </span>
+</div>
+
+<!-- 
+=====Numbers====== -->
+
+<div class="numbers">
+  <span class="one">
+    1
+  </span>
+  <span class="twoeight">
+    2 3 4 5 6 7 8 ...
+  </span>
+  <span class="twofive">
+    250
+  </span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+      <!-- build:js scripts/vendor.js
       <!-- bower:js -->
       <script src="../bower_components/jquery/dist/jquery.js"></script>
       <!-- endbower -->

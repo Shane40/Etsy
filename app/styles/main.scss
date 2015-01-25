@@ -31,6 +31,14 @@ body {
     border-radius: 4px;
     background-color: hsla(24, 6%, 98%, 1);
 }
+.container i {
+    padding-top: 5px;
+    padding-left: 12px;
+    margin-top: 25px;
+    height: 28px;
+    margin-left: 14px;
+    border-left: 1px solid;
+}
 .search {
     float: left;
     margin-top: 25px;
@@ -106,6 +114,8 @@ body {
     text-align: center;
 }
 
+
+
 // END OF CONTAINER
 
 
@@ -147,7 +157,6 @@ font-weight: normal;
   list-style-type: none;
   font-weight: normal;
 }
-
 .sort .blue {
   color: hsla(192, 99%, 36%, 1);
 
@@ -160,23 +169,20 @@ font-weight: normal;
   top: 50px;
   float: left;
   margin-left: -66px;
+  margin-bottom: 1100px;
   width: 200px;
-  height: 10000px;
+  height: 963px;
   padding-right: 25px;
   padding-left: 10px;
   padding-top: 10px;
   background-color: white;
 }
-.itemtype {
-  line-height: 200%;
-  margin-left: 0px;
-  padding-left: 10px;
+.boxleft a {
+  color: black;
+  font-weight: bold;
+  font-size: 11px;
 }
-.itemtype li:nth-child(1) {
-  margin-left: 0px;
-  padding-left: -10px;
-}
-.boxleft li:nth-child(1){
+.boxleft li:nth-child(2){
   color: black;
   padding-left: -10px;
   font-weight: bold;
@@ -184,29 +190,45 @@ font-weight: normal;
 .boxleft li {
   list-style: none;
   margin-left: 0px;
-  font-size: 12px;
-  line-height: 180%;
+  font-size: 11px;
+  line-height: 150%;
   padding-left: 10px;
   color: hsla(192, 99%, 36%, 1);
 }
 .boxleft p {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: bold;
   color: hsla(192, 99%, 36%, 1);
+  margin-bottom: 3px;
 }
+
+// ======Items type =====
+.boxleft .itemtype li {
+  padding-left: 0px;
+  line-height: 160%;
+}
+.itemtype li:nth-child(1) {
+  margin-left: 0px;
+  padding-left: -10px;
+  color: black;
+  font-weight: bold;
+}
+
 
 // =========Price Filter=========
 
 .pricefilter p {
   display: block;
   color: black;
+  padding-top: 6px;
 }
 .pricefilter .min li {
+    margin-top: 4px;
     padding-left: 10px;
     padding-top: 4px;
     padding-bottom: 4px;
     float: left;
-    font-size: 12px;
+    font-size: 11px;
     color: grey;
     width: 55px;
     font-weight: normal;
@@ -215,21 +237,23 @@ font-weight: normal;
      letter-spacing: 1px;
 }
 .pricefilter .to li {
+    margin-top: 4px;
     float: left;
     font-size: 11px;
     width: 15px;
     padding-left: 8px;
     padding-right: 20px;
     font-weight: normal;
-    padding-top: 6px;
+    padding-top: 4px;
 }
 .pricefilter .max li {
+    margin-top: 4px;
     float: left;
     width: 55px;
     padding-left: 10px;
     padding-top: 4px;
     padding-bottom: 4px;
-    font-size: 12px;
+    font-size: 11px;
     border: 1px solid;
     color: grey;
     border-radius: 2px;
@@ -238,7 +262,7 @@ font-weight: normal;
 }
 
 .filterbycolor p {
-    margin-top: 60px;
+    margin-top: 50px;
     display: block;
     color: black;
     border-top: 1px solid;
@@ -288,7 +312,7 @@ font-weight: normal;
     width: 17px;
     height: 17px;
     margin: 2px;
-     border-radius: 3px;
+    border-radius: 3px;
     background-color: aqua;
 }
 .filterbycolor .purple {
@@ -333,17 +357,75 @@ font-weight: normal;
 }
 
 // ======Ordering Options=====
-.onbutton button { 
-}
 
 .orderingoptions .accepts {
-   font-size: 9pt;
-   color: hsla(192, 99%, 36%, 1);
+    font-size: 8pt;
+    margin-right: 18px;
+    color: hsla(192, 99%, 36%, 1);
 }
 
-  
+// ======Shop location =====
 
+.shoplocation p {
+  border-top: 1px solid;
+  font-weight: bold;
+  color: black;
+  padding-top: 15px;
+  margin-bottom: 8px;
+}
 
+.shoplocation .anywhere {
+    font-size: 8pt;
+    margin-right: 80px;
+    font-weight: bold;
+
+}
+.shoplocation .US {
+    font-size: 8pt;
+    margin-right: 50px;
+    color: hsla(192, 99%, 36%, 1);
+}
+.shoplocation .accepts {
+    font-size: 8pt;
+    margin-right: 5px;
+    color: hsla(192, 99%, 36%, 1);
+}
+
+// ====== Ships To ======
+
+.shipsto {
+  border-top: 1px solid;
+  margin-top: 15px;
+}
+.shipsto .ships p {
+  float: left;
+  width: 50x;
+  font-weight: bold;
+  color: black;
+  padding-top: 5px;
+  margin-bottom: 8px;
+}
+.shipsto .clear p {
+  float: right;
+  font-weight: normal;
+  color: hsla(192, 99%, 36%, 1);
+  padding-top: 5px;
+  margin-bottom: 8px;
+}
+
+.shipsto .united li {
+    margin-top: 4px;
+    float: left;
+    width: 165px;
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 9.5px;
+    border: 1px solid;
+    color: black;
+    border-radius: 2px;
+    font-weight: normal;
+}
 
 
 // ======= END OF BOXLEFT =======
@@ -382,7 +464,7 @@ img {
 }
 .productbox h4 {
   font-size: 12px;
-   margin-left: 5px;
+  margin-left: 5px;
   font-weight: normal;
   color: hsla(22, 6%, 81%, 1);
   float: left;
@@ -395,4 +477,106 @@ img {
   padding-right: 12px;
 }
 // ----- END OF BOX RIGHT --------
+
+// =====footer======
+  
+.footer {
+  font-size: 11px;
+  position: relative;
+  float: left;
+  width: 700px;
+  margin-left: -225px;
+  margin-top: 310px;
+}
+.footer .related {
+  font-weight: normal;
+  margin-bottom: 6px;
+}
+.footer .liquor {
+  font-weight: bold;
+  margin-right: 800px;
+   margin-bottom: 6px;
+}
+.footer .firstul {
+  font-weight: normal;
+  list-style: none;
+  float: left;
+  width: 100px;
+  color: hsla(192, 99%, 36%, 1);
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 4px;
+  line-height: 170%;
+}
+.footer .secondul {
+  font-weight: normal;
+  list-style: none;
+  float: left;
+  width: 100px;
+  color: hsla(192, 99%, 36%, 1);
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 4px;
+  line-height: 170%;
+}
+.footer .thirdul {
+  font-weight: normal;
+  list-style: none;
+  float: left;
+  width: 100px;
+  color: hsla(192, 99%, 36%, 1);
+  margin-right: 380px;
+  margin-top: 5px;
+  margin-bottom: 4px;
+  line-height: 170%;
+}
+
+.footer .lightbold {
+  list-style: none;
+  color: black;
+  float: left;
+  margin-top: 20px;
+}
+
+.footer .whiskeybold {
+  list-style: none;
+  color: hsla(192, 99%, 36%, 1);
+}
+
+// =====Numbers======
+
+
+.numbers {
+  font-size: 11px;
+  position: relative;
+  float: left;
+  width: 700px;
+  margin-left: 225px;
+  margin-top: 25px;
+  text-align: center;
+}
+.numbers .one {
+  color: black;
+  font-weight: bolder;
+}
+.numbers .twoeight {
+  font-weight: bolder;
+  color: hsla(192, 99%, 36%, 1);
+}
+.numbers .twofive {
+  font-weight: bolder;
+  color: hsla(192, 99%, 36%, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
